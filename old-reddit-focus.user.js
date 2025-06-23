@@ -9,6 +9,8 @@
 // @description Removes all non-essential components to reddit, ideal for just focusing on question threads, and their answers
 // @run-at document-start
 // @license     GPL-3.0-or-later
+// @downloadURL https://raw.githubusercontent.com/initMayday/userscripts/master/old-reddit-focus.user.js
+// @updateURL   https://raw.githubusercontent.com/initMayday/userscripts/master/old-reddit-focus.user.js
 // ==/UserScript==
 
 // ** NOTE: This userscript runs at document-start, before content loads ** //
