@@ -4,7 +4,7 @@
 // @match       *://www.reddit.com/*
 // @match       *://old.reddit.com/*
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      initMayday
 // @description Removes all non-essential components to reddit, ideal for just focusing on question threads, and their answers
 // @run-at document-start
