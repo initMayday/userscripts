@@ -23,9 +23,12 @@
 
   // If we are on modern reddit, redirect to old reddit
   if (location.hostname == "www.reddit.com") {
-    window.location.replace("https://old.reddit.com" + window.location.pathname + window.location.search);
-    return; // When we go to old reddit, the rest will run
+    if (!location.pathname.startsWith("/media")) { // Don't redirect from media, it doesn't work on old reddit
+            window.location.replace("https://old.reddit.com" + window.location.pathname + window.location.search);
+    }
+    return; // When (or if in the case of www.reddit.com/media) we go to old reddit, the rest will run
   }
+
 
   // Hide the page whilst we are modifying it
   const style = document.createElement("style");
@@ -59,3 +62,4 @@
     style.remove();
   });
 })();
+
